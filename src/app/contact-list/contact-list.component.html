@@ -1,0 +1,3 @@
+<div class="ui cards">
+  <contact class="card" *ngFor="let contact of contacts" [contact]="contact" (edit)="editContact($event)" (delete)="deleteContact($event)"></contact>
+</div>

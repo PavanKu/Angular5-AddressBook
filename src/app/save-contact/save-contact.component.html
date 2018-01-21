@@ -1,0 +1,23 @@
+<div class="ui form">
+  <div class="fields">
+    <div class="four wide field">
+      <label>First Name</label>
+      <input name="firstname" type="text" placeholder="First Name" [(ngModel)]="contact.firstName" autofocus>
+    </div>
+    <div class="four wide field">
+      <label>Last Name</label>
+      <input name="lastname" type="text" placeholder="Last Name" [(ngModel)]="contact.lastName">
+    </div>
+    <div class="three wide field">
+      <label>Phone No.</label>
+      <input name="phone" type="text" placeholder="Phone Number" [(ngModel)]="contact.phone">
+    </div>
+    <div class="three wide field">
+      <label>Country</label>
+      <input name="country" type="text" placeholder="Country" [(ngModel)]="contact.country">
+    </div>
+    <div class="three wide field">
+      <button class="ui primary button inline" type="button" (click)="saveContact()">Save Contact</button>
+    </div>
+  </div>
+</div>

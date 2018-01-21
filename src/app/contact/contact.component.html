@@ -1,0 +1,24 @@
+<div class="content">
+  <i class="right floated address card outline icon"></i>
+  <div class="header">
+    {{contact.fullName}}
+  </div>
+  <div class="description">
+    <span class="call">
+        <i class="call icon"></i>
+        {{contact.phone}}
+      </span>
+  </div>
+  <div class="description">
+      <span class="marker">
+          <i class="marker icon"></i>
+          {{contact.country}}
+        </span>
+    </div>
+</div>
+<div class="extra content">
+  <div class="ui two buttons">
+    <div class="ui basic green button" (click)="editContact()">Edit</div>
+    <div class="ui basic red button" (click)="deleteContact()">Delete</div>
+  </div>
+</div>

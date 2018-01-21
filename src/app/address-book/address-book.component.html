@@ -1,0 +1,7 @@
+<div class="ui container">
+  <header></header>
+  <div class="ui segments">
+    <save-contact class="ui block segment" (save)="saveContact($event)" [contact]="contact"></save-contact>
+    <contact-list class="ui block segment" [contacts]="contacts" (edit)="editContact($event)" (delete)="deleteContact($event)"></contact-list>
+  </div>
+</div>
