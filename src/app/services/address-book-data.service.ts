@@ -26,7 +26,7 @@ export class AddressBookDataService {
     if(!contact) {
       return null;
     }
-    Object.assign(contact.save(), values);
+    Object.assign(contact, values.save());
     return contact;
   }
 
